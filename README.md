@@ -10,13 +10,13 @@ In making this project, I took three different measurements into account: the co
 ## Method
 After compiling the necessary data, I placed each of the 435 districts into one of ten categories:<br />
 &nbsp;&nbsp;&nbsp;Districts represented by Democrats where:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) The district leans Republican (PVI is R+__)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) The district leans Republican (PVI is R+\_\_)<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) The district is non-partisan (PVI is EVEN)<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c) The district is tepidly Democrat (PVI is D+1-5)<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d) The district is moderately Democrat (PVI is D+6-15)<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e) The district is solidly Democrat (PVI is >D+15)<br />
 &nbsp;&nbsp;&nbsp;Districts represented by Republicans where:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) The district leans Democrat (PVI is D+__)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) The district leans Democrat (PVI is D+\_\_)<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) The district is non-partisan (PVI is EVEN)<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c) The district is tepidly Republican (PVI is R+1-5)<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d) The district is moderately Republican (PVI is R+6-15)<br />
