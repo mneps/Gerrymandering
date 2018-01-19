@@ -1,0 +1,25 @@
+]0;~/Desktop/Home/4-SeniorYear/Other/gerrymandering[?1034hMatthews-MacBook-Pro-19:gerrymandering MNEpstein$ [KMatthews-MacBook-Pro-19:gerrymandering MNEpstein$ ls
+gerrymandering.Rproj	test.R
+]0;~/Desktop/Home/4-SeniorYear/Other/gerrymanderingMatthews-MacBook-Pro-19:gerrymandering MNEpstein$ Rscript test.R 
+[1] 6
+]0;~/Desktop/Home/4-SeniorYear/Other/gerrymanderingMatthews-MacBook-Pro-19:gerrymandering MNEpstein$ [KMatthews-MacBook-Pro-19:gerrymandering MNEpstein$ Rscript test.R 
+[1] 6
+]0;~/Desktop/Home/4-SeniorYear/Other/gerrymanderingMatthews-MacBook-Pro-19:gerrymandering MNEpstein$ Rscript test.R 
+[1] 6
+[1] 1 2 3
+]0;~/Desktop/Home/4-SeniorYear/Other/gerrymanderingMatthews-MacBook-Pro-19:gerrymandering MNEpstein$ Rscript test.R 
+[1] 6
+[1] 1 2 3
+]0;~/Desktop/Home/4-SeniorYear/Other/gerrymanderingMatthews-MacBook-Pro-19:gerrymandering MNEpstein$ Rscript test.R 
+[1] 6
+[1] 1 2 3
+]0;~/Desktop/Home/4-SeniorYear/Other/gerrymanderingMatthews-MacBook-Pro-19:gerrymandering MNEpstein$ Rscript test.R 
+[1] 6
+[1] 1 1 2 3
+[KMatthews-MacBook-Pro-19:gerrymandering MNEpstein$ Rscript gerrymanderingg.R
+bash: Rscript: command not found
+]0;~/Desktop/Home/4-SeniorYear/Other/statistics/gerrymanderingMatthews-MacBook-Pro-19:gerrymandering MNEpstein$ E[KR.home
+bash: R.home: command not found
+]0;~/Desktop/Home/4-SeniorYear/Other/statistics/gerrymanderingMatthews-MacBook-Pro-19:gerrymandering MNEpstein$ R.home()
+> 
+]0;~/Desktop/Home/4-SeniorYear/Other/statistics/gerrymanderingMatthews-MacBook-Pro-19:gerrymandering MNEpstein$ 

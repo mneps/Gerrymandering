@@ -1,0 +1,67 @@
+data <- read.csv(file="data.csv", head=TRUE, sep=",", stringsAsFactors=FALSE)
+
+#alter data to make congressional districts ints
+districts <- as.numeric(gsub("\\D", "", data$"NAMELSAD"))
+for (i in 1:length(districts)) {
+	if(is.na(districts[i])) {
+		districts[i] <- 1
+	}
+}
+#make state numbers ints
+state <- as.numeric(data$"STATEFP")
+#make compactness scores ints
+compactness <- as.numeric(data$"COMPACTNESS")
+
+df <- data.frame(districts, state, compactness)
+
+df <- df[order(df[,2], df[,1]),]
+
+#data includes territories as well as states. This defines the list of statefp
+#codes for only the states.
+states <- setdiff(1:56, c(3, 7, 11, 14, 43, 52))
+
+#removes all non-states from the dataframe
+rows_to_remove <- c()
+for (i in 1:length(df[,2])) {
+	if (!is.element(df[i,2], states)) {
+		rows_to_remove <- append(rows_to_remove, i)
+	}
+}
+df <- df[-rows_to_remove,]
+
+
+partisan_data <- read.csv(file="partisan_data.csv", head=TRUE, sep=",", stringsAsFactors=FALSE)
+
+party <- partisan_data$"Party"
+
+pvi <- c()
+for (i in 1:length(partisan_data$"PVI")) {
+	if (partisan_data$"PVI"[i] == "EVEN") {
+		pvi <- append(pvi, 0)
+	} else {
+		substring <- strsplit(partisan_data$"PVI"[i], '+', fixed=TRUE)
+		if (substring[[1]][1] == "R") {
+			pvi <- append(pvi, (as.numeric(substring[[1]][2])) * -1)
+		} else { # == "D"
+			pvi <- append(pvi, (as.numeric(substring[[1]][2])))
+		}
+	}
+}
+
+df$"party" <- party
+df$"pvi" <- pvi
+df
+
+
+
+
+
+main <- function() {
+    df <- create_initial_dataframe()
+}
+
+if(!interactive()) {
+    main()
+}
+
+
